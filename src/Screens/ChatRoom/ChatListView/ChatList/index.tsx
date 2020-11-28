@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useRef} from 'react';
 import {FlatList} from 'react-native';
 import styled from 'styled-components/native';
 
@@ -13,15 +13,19 @@ interface Props {}
 
 const ChatList = ({}: Props) => {
   const {chatList} = useContext<IChatContext>(ChatContext);
-
+  const refContainer = useRef(null);
   return (
-    <Container
+    <FlatList
+      scrollsToTop={true}
+      snapToAlignment="start"
       data={chatList}
       keyExtractor={(item, index) => {
         return `chat-${index}`;
       }}
       ListEmptyComponent={<EmptyItem />}
       renderItem={({item, index}) => <ChatItem text={item as string} />}
+      ref={refContainer}
+      onContentSizeChange={() => refContainer.current.scrollToEnd()}
       contentContainerStyle={chatList.length === 0 && {flex: 1}}
     />
   );
