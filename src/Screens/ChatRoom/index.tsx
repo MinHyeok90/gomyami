@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styled from 'styled-components/native';
 
 import AddChatBox from './AddChatBox';
@@ -11,6 +11,7 @@ const Contianer = styled.KeyboardAvoidingView`
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
+  background-color: #777;
 `;
 
 interface Props {}

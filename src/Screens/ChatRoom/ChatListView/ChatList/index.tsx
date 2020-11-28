@@ -5,7 +5,8 @@ import styled from 'styled-components/native';
 import {ChatContext} from '~/Context/ChatContext';
 
 import EmptyItem from './EmptyItem';
-import ChatItem from './ChatItem';
+import ChatMe from './ChatMe';
+import ChatCurse from './ChatCurse';
 
 const Container = styled(FlatList)``;
 
@@ -23,7 +24,12 @@ const ChatList = ({}: Props) => {
         return `chat-${index}`;
       }}
       ListEmptyComponent={<EmptyItem />}
-      renderItem={({item, index}) => <ChatItem text={item as string} />}
+      renderItem={({item, index}) => {
+        if (index % 2 === 0) {
+          return <ChatMe text={item as string} />;
+        } else {
+          return <ChatCurse text={item as string} />;
+        }}}
       ref={refContainer}
       onContentSizeChange={() => refContainer.current.scrollToEnd()}
       contentContainerStyle={chatList.length === 0 && {flex: 1}}

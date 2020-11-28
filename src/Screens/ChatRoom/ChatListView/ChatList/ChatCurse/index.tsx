@@ -4,7 +4,7 @@ import styled from 'styled-components/native';
 const Container = styled.View`
   flex-direction: row;
   background-color: #fff;
-  margin: 4px 16px;
+  width: 50%;
   padding: 8px 16px;
   border-radius: 8px;
   align-items: center;
@@ -18,12 +18,12 @@ interface Props {
   text: string;
 }
 
-const ChatItem = ({text}: Props) => {
+const ChatCurse = ({text}: Props) => {
   return (
     <Container>
-      <Label>{text}</Label>
+      <Label selectable={true}>{text}</Label>
     </Container>
   );
 };
 
-export default ChatItem;
+export default ChatCurse;
