@@ -3,7 +3,7 @@ import Styled from 'styled-components/native';
 
 import ChatList from './ChatList';
 
-const Container = Styled.SafeAreaView`
+const Container = Styled.KeyboardAvoidingView`
     flex: 1;    
 `;
 

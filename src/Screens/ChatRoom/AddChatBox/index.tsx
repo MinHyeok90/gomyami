@@ -1,18 +1,17 @@
 import React, {useState, useContext} from 'react';
 import styled from 'styled-components/native';
-import * as Hangul from 'hangul-js';
 
 import {ChatContext} from '~/Context/ChatContext';
 import Button from '~/Components/Button';
 
 const Container = styled.View`
-  display: flex;
   flex-direction: row;
+  background-color: #777777;
 `;
 
 const Input = styled.TextInput`
   flex: 3;
-  height: 40px;
+  height: 45px;
   background-color: #fff;
   padding: 0px 8px;
 `;

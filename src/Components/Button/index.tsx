@@ -3,8 +3,8 @@ import styled from 'styled-components/native';
 
 const Container = styled.KeyboardAvoidingView`
   bottom: 0px;
-  justify-content: flex-end;
-  padding-left: 10px;
+  justify-content: center;
+  margin: 10px;
 `;
 
 const ButtonContainer = styled.TouchableOpacity`

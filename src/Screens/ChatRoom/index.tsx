@@ -18,8 +18,8 @@ interface Props {}
 const ChatRoom = ({}: Props) => {
   return (
     <Contianer>
-      <AddChatBox />
       <ChatListView />
+      <AddChatBox />
     </Contianer>
   );
 };
