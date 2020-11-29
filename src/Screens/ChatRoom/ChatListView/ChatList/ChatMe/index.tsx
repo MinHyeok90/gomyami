@@ -4,7 +4,8 @@ import styled from 'styled-components/native';
 const Container = styled.View`
   flex-direction: row-reverse;
   width: 100%;
-  padding: 8px 16px;
+  padding-bottom: 8px;
+  padding-right: 8px;
   border-radius: 8px;
   align-items: center;
 `;
@@ -13,7 +14,7 @@ const Bubble = styled.View`
   flex-direction: row;
   background-color: #ff0;
   max-width: 66%;
-  padding: 8px 16px;
+  padding: 8px 8px;
   border-radius: 8px;
   align-items: center;
 `;
