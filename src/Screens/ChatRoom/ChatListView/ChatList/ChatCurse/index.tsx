@@ -14,7 +14,6 @@ const ProfileImage = styled.Image`
   height: 40px;
   background-color: #a00;
   border-radius: 3px;
-  margin-right: 5px;
 `;
 
 const ContentsContainer = styled.View`
@@ -23,6 +22,9 @@ const ContentsContainer = styled.View`
 
 const Name = styled.Text`
   font-size: 15px;
+  margin-left: 10px;
+  margin-top: -4px;
+  padding-bottom: 3px;
 `;
 
 const BracketContainer = styled.View`
@@ -30,14 +32,15 @@ const BracketContainer = styled.View`
 `;
 
 const Bracket = styled.Image`
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
+  margin-right: -7px;
 `;
 
 const Bubble = styled.View`
   background-color: #fff;
   min-height: 40px;
-  padding: 8px 12px;
+  padding: 8px 12px;  
 `;
 
 const Label = styled.Text`
@@ -46,6 +49,7 @@ const Label = styled.Text`
 const Time = styled.Text`
   font-size: 10px;
   align-self: flex-end;
+  margin-left: 7px;
 `;
 
 interface Props {
