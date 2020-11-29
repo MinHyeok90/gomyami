@@ -3,15 +3,22 @@ import styled from 'styled-components/native';
 
 const Container = styled.View`
   flex-direction: row;
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 8px;
+  align-items: center;
+`;
+
+const Bubble = styled.View`
+  flex-direction: row;
   background-color: #fff;
-  width: 50%;
+  max-width: 66%;
   padding: 8px 16px;
   border-radius: 8px;
   align-items: center;
 `;
 
 const Label = styled.Text`
-  flex: 1;
 `;
 
 interface Props {
@@ -21,7 +28,9 @@ interface Props {
 const ChatCurse = ({text}: Props) => {
   return (
     <Container>
-      <Label selectable={true}>{text}</Label>
+      <Bubble>
+        <Label selectable={true}>{text}</Label>
+      </Bubble>
     </Container>
   );
 };
