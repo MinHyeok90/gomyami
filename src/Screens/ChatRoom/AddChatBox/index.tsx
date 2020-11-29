@@ -6,7 +6,7 @@ import Button from '~/Components/Button';
 
 const Container = styled.View`
   flex-direction: row;
-  background-color: #777777;
+  background-color: #ff0;
 `;
 
 const Input = styled.TextInput`

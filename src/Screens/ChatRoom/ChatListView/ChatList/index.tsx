@@ -8,8 +8,6 @@ import EmptyItem from './EmptyItem';
 import ChatMe from './ChatMe';
 import ChatCurse from './ChatCurse';
 
-const Container = styled(FlatList)``;
-
 interface Props {}
 
 const ChatList = ({}: Props) => {

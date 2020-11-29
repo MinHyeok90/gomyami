@@ -10,8 +10,7 @@ const Contianer = styled.KeyboardAvoidingView`
   height: 100%;
   flex-direction: column;
   justify-content: center;
-  align-items: stretch;
-  background-color: #777;
+  background-color: #aaa;
 `;
 
 interface Props {}
