@@ -14,11 +14,13 @@ const Bracket = styled.Image`
   width: 20px;
   height: 20px;
   margin-left: -7px;
+  margin-top: 10px;
 `;
 
 const Bubble = styled.View`
   background-color: #ff0;
   max-width: 66%;
+  margin-top: 10px;
   padding: 8px 12px;
   border-radius: 8px;
 `;
