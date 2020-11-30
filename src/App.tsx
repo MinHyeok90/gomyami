@@ -1,12 +1,11 @@
 import React from 'react';
-
 import {ChatContextProvider} from './Context/ChatContext';
-import ChatRoom from '~/Screens/ChatRoom';
+import Navigator from '~/Screens/Navigator';
 
 const App = () => {
   return (
     <ChatContextProvider>
-      <ChatRoom />
+      <Navigator />
     </ChatContextProvider>
   );
 };
