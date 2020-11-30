@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
+import {useNavigation} from '@react-navigation/native';
 
 const Contianer = styled.KeyboardAvoidingView`
   display: flex;
@@ -20,7 +21,8 @@ const RoomTitle = styled.Text`
 
 interface Props {}
 
-const RoomList = ({navigation}) => {
+const RoomList = ({}) => {
+  const navigation = useNavigation();
   return (
     <Contianer>
       <Room>
