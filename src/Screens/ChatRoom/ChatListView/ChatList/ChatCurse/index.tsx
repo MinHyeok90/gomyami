@@ -40,11 +40,10 @@ const Bracket = styled.Image`
 const Bubble = styled.View`
   background-color: #fff;
   min-height: 40px;
-  padding: 8px 12px;  
+  padding: 8px 12px;
 `;
 
-const Label = styled.Text`
-`;
+const Label = styled.Text``;
 
 const Time = styled.Text`
   font-size: 10px;

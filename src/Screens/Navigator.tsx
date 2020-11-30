@@ -16,7 +16,6 @@ export default () => {
           component={RoomList}
           options={{
             title: '대화방 목록',
-            headerTintColor: '#faa',
             headerTitleStyle: {
               fontWeight: 'bold',
             },
